@@ -141,17 +141,36 @@ Let X be a random variable such that $E(X)=E(X^2)=1$. Then $E(X^{100})=?$
 \end{enumerate}
 \section*{Solution}
 \begin{align}
-    \rho^2&=\mean{X^2}-\mean{X}^2\\
+    \rho(X)^2&=\mean{X^2}-\mean{X}^2\\
           &=1 - 1^2\\
           &=0
 \end{align}
-$\therefore$ X is constant and equal to 1
+We also know
+\begin{align}
+    \rho(X)^2&=\mean{(X-\mean{X})^2}\\
+             &=\frac{\sum(X-\mean{X})^2}{N}\label{a}
+\end{align}
+Where N is the number of terms of summation.
 
 
-Thus we can conclude that
+As $\rho(X)^2=0$ and each term summation in \eqref{a} $\geq 0$, we can conclude that each term of summation is 0.
+
+
+Or we can write 
+\begin{align}
+    X&=\mean{X}\\
+     &=1
+\end{align}
+
+$\therefore$ X takes only one value which is 1. Alternatively we can write
+\begin{align}
+    \pr{X=1}&=1
+\end{align}
+So, finally we can say that
 \begin{align}
     \mean{X^{100}}&=\sum X^{100}\pr{X}\\
+                  &=1^{100}\pr{X=1}\\  
                   &=1
-\end{align}
+\end{align} 
 \solution{Option B}
 \end{document}
