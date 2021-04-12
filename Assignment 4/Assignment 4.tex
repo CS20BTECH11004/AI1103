@@ -164,74 +164,72 @@ Now,for some constant $c\geq0$
               %&=-e^{-x}\Big|_c^{\infty}\nonumber\\
               &=e^{-c}\label{b}
 \end{align}
-
-\textbf{Option 1:} 
-We can say the events $X_n>log n$ are independent $\forall n\geq 1$ as $X_n$ are independent random variable.
-
-From \eqref{b}
-\begin{align}
-    \sum_{n=1}^{\infty}\pr{X_n > log n} &=\sum_{n=1}^{\infty}e^{-logn}\nonumber\\ &=\sum_{n=1}^{\infty}\frac{1}{n}\nonumber\\
-                                        &= \infty  \text{ (Cauchy's Criterion)}\nonumber
-\end{align}
-Now,from second Borel-Cantelli lemma we can say that
-\begin{align}
-    &\pr{X_n>logn \text{ for infinitely many }n\geq1}\nonumber\\
-    &=\pr{\text{lim}_{n \rightarrow \infty}\text{sup }X_n>logn}\nonumber\\
-    &=1\nonumber
-\end{align}
-$\therefore$ Option 1 is correct.
-
-\vspace{0.5cm}\textbf{Option 2:} We can say the events $X_n>2$ are independent $\forall n\geq 1$ as $X_n$ are independent random variable.
-
-From \eqref{b}
-\begin{align}
-    \sum_{n=1}^{\infty}\pr{X_n > 2} &= \sum_{n=1}^{\infty}e^{-2}\nonumber\\
-                                        &= \infty\nonumber
-\end{align}
-Now,from second Borel-Cantelli lemma we can say that
-\begin{align}
-    &\pr{X_n>2 \text{ for infinitely many }n\geq1}\nonumber\\
-    &=\pr{\text{lim}_{n \rightarrow \infty}\text{sup }X_n>2}\nonumber\\
-    &=1\nonumber
-\end{align}
-$\therefore$ Option 2 is correct.
-
-
-\vspace{0.5cm}\textbf{Option 3:} We can say the events $X_n>\frac{1}{2}$ are independent $\forall n\geq 1$ as $X_n$ are independent random variable.
-
-From \eqref{b}
-\begin{align}
-    \sum_{n=1}^{\infty}\pr{X_n > \frac{1}{2}} &= \sum_{n=1}^{\infty}e^{-\frac{1}{2}}\nonumber\\
-                                        &= \infty\nonumber
-\end{align}
-Now,from second Borel-Cantelli lemma we can say that
-\begin{align}
-    &\pr{X_n>\frac{1}{2} \text{ for infinitely many }n\geq1}\nonumber\\
-    &=\pr{\text{lim}_{n \rightarrow \infty}\text{sup }X_n>\frac{1}{2}}\nonumber\\
-    &=1\nonumber
-\end{align}
-$\therefore$ Option 3 is incorrect.
-
-\vspace{0.5cm}\textbf{Option 4:} We can say the events $X_n>logn$ are independent $\forall n\geq 1$ as $X_n$ are independent random variable.
-
-Let the event $X_n > logn,X_{n+1}>log(n+1)$ be represented by $E_n$'
-
-From \eqref{b}
-\begin{align}
-    &\sum_{n=1}^{\infty}\pr{E_n}\nonumber\\
-    &= \sum_{n=1}^{\infty}\pr{X_n>logn}\pr{X_{n+1}>log(n+1)}\nonumber\\
-    &=\sum_{n=1}^{\infty}e^{-logn}e^{-log(n+1)}\nonumber\\
-    &=\sum_{n=1}^{\infty}\frac{1}{n(n+1)}\nonumber\\
-    &=\sum_{n=1}^{\infty}\frac{1}{n}-\frac{1}{n+1}\nonumber\\
-    &=1
-\end{align}
-Now,from Borel-Cantelli lemma we can say that
-\begin{align}
-    &\pr{E_n\text{ for infinitely many }n\geq1}\nonumber\\
-    &=\pr{\text{lim}_{n \rightarrow \infty}\text{sup }X_n>logn,X_{n+1}>log(n+1)}\nonumber\\
-    &=0\nonumber
-\end{align}
-$\therefore$ Option 4 is correct.
-
+\begin{enumerate}
+    \item \textbf{Option 1:} 
+    We can say the events $X_n>log n$ are independent $\forall n\geq 1$ as $X_n$ are independent random variable.
+    
+    From \eqref{b}
+    \begin{align}
+        \sum_{n=1}^{\infty}\pr{X_n > log n} &=\sum_{n=1}^{\infty}e^{-logn}\nonumber\\ &=\sum_{n=1}^{\infty}\frac{1}{n}\nonumber\\
+                                            &= \infty  \text{ (Cauchy's Criterion)}\nonumber
+    \end{align}
+    Now,from second Borel-Cantelli lemma we can say that
+    \begin{align}
+        &\pr{X_n>logn \text{ for infinitely many }n\geq1}\nonumber\\
+        &=\pr{\text{lim}_{n \rightarrow \infty}\text{sup }X_n>logn}\nonumber\\
+        &=1\nonumber
+    \end{align}
+    $\therefore$ Option 1 is correct. 
+    
+    \item\textbf{Option 2:} We can say the events $X_n>2$ are independent $\forall n\geq 1$ as $X_n$ are independent random variable.
+    
+    From \eqref{b}
+    \begin{align}
+        \sum_{n=1}^{\infty}\pr{X_n > 2} &= \sum_{n=1}^{\infty}e^{-2}\nonumber\\
+                                            &= \infty\nonumber
+    \end{align}
+    Now,from second Borel-Cantelli lemma we can say that
+    \begin{align}
+        &\pr{X_n>2 \text{ for infinitely many }n\geq1}\nonumber\\
+        &=\pr{\text{lim}_{n \rightarrow \infty}\text{sup }X_n>2}\nonumber\\
+        &=1\nonumber
+    \end{align}
+    $\therefore$ Option 2 is correct.
+    
+    \item \textbf{Option 3:} We can say the events $X_n>\frac{1}{2}$ are independent $\forall n\geq 1$ as $X_n$ are independent random variable.
+    
+    From \eqref{b}
+    \begin{align}
+        \sum_{n=1}^{\infty}\pr{X_n > \frac{1}{2}} &= \sum_{n=1}^{\infty}e^{-\frac{1}{2}}\nonumber\\
+                                            &= \infty\nonumber
+    \end{align}
+    Now,from second Borel-Cantelli lemma we can say that
+    \begin{align}
+        &\pr{X_n>\frac{1}{2} \text{ for infinitely many }n\geq1}\nonumber\\
+        &=\pr{\text{lim}_{n \rightarrow \infty}\text{sup }X_n>\frac{1}{2}}\nonumber\\
+        &=1\nonumber
+    \end{align}
+    $\therefore$ Option 3 is incorrect.
+    \item \textbf{Option 4:} We can say the events $X_n>logn$ are independent $\forall n\geq 1$ as $X_n$ are independent random variable.
+    
+    Let the event $X_n > logn,X_{n+1}>log(n+1)$ be represented by $E_n$'
+    
+    From \eqref{b}
+    \begin{align}
+        &\sum_{n=1}^{\infty}\pr{E_n}\nonumber\\
+        &= \sum_{n=1}^{\infty}\pr{X_n>logn}\pr{X_{n+1}>log(n+1)}\nonumber\\
+        &=\sum_{n=1}^{\infty}e^{-logn}e^{-log(n+1)}\nonumber\\
+        &=\sum_{n=1}^{\infty}\frac{1}{n(n+1)}\nonumber\\
+        &=\sum_{n=1}^{\infty}\frac{1}{n}-\frac{1}{n+1}\nonumber\\
+        &=1
+    \end{align}
+    Now,from Borel-Cantelli lemma we can say that
+    \begin{align}
+        &\pr{E_n\text{ for infinitely many }n\geq1}\nonumber\\
+        &=\pr{\text{lim}_{n \rightarrow \infty}\text{sup }X_n>logn,X_{n+1}>log(n+1)}\nonumber\\
+        &=0\nonumber
+    \end{align}
+    $\therefore$ Option 4 is correct.
+\end{enumerate}
 \vspace{0.5cm}\centering \boxed{\solution{\text{Options 1, 2, 4}}}
 \end{document}
