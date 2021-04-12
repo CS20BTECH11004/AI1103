@@ -166,17 +166,17 @@ Now,for some constant $c\geq0$
 \end{align}
 \begin{enumerate}
     \item \textbf{Option 1:} 
-    We can say the events $X_n>log n$ are independent $\forall n\geq 1$ as $X_n$ are independent random variable.
+    We can say the events $X_n>\log n$ are independent $\forall n\geq 1$ as $X_n$ are independent random variable.
     
     From \eqref{b}
     \begin{align}
-        \sum_{n=1}^{\infty}\pr{X_n > log n} &=\sum_{n=1}^{\infty}e^{-logn}\nonumber\\ &=\sum_{n=1}^{\infty}\frac{1}{n}\nonumber\\
+        \sum_{n=1}^{\infty}\pr{X_n > \log n} &=\sum_{n=1}^{\infty}e^{-\log n}\nonumber\\ &=\sum_{n=1}^{\infty}\frac{1}{n}\nonumber\\
                                             &= \infty  \text{ (Cauchy's Criterion)}\nonumber
     \end{align}
     Now,from second Borel-Cantelli lemma we can say that
     \begin{align}
-        &\pr{X_n>logn \text{ for infinitely many }n\geq1}\nonumber\\
-        &=\pr{\text{lim}_{n \rightarrow \infty}\text{sup }X_n>logn}\nonumber\\
+        &\pr{X_n>\log n \text{ for infinitely many }n\geq1}\nonumber\\
+        &=\pr{\text{lim}_{n \rightarrow \infty}\text{sup }X_n>\log n}\nonumber\\
         &=1\nonumber
     \end{align}
     $\therefore$ Option 1 is correct. 
@@ -210,15 +210,15 @@ Now,for some constant $c\geq0$
         &=1\nonumber
     \end{align}
     $\therefore$ Option 3 is incorrect.
-    \item \textbf{Option 4:} We can say the events $X_n>logn$ are independent $\forall n\geq 1$ as $X_n$ are independent random variable.
+    \item \textbf{Option 4:} We can say the events $X_n>\log n$ are independent $\forall n\geq 1$ as $X_n$ are independent random variable.
     
-    Let the event $X_n > logn,X_{n+1}>log(n+1)$ be represented by $E_n$'
+    Let the event $X_n > \log n,X_{n+1}>\log (n+1)$ be represented by $E_n$'
     
     From \eqref{b}
     \begin{align}
         &\sum_{n=1}^{\infty}\pr{E_n}\nonumber\\
-        &= \sum_{n=1}^{\infty}\pr{X_n>logn}\pr{X_{n+1}>log(n+1)}\nonumber\\
-        &=\sum_{n=1}^{\infty}e^{-logn}e^{-log(n+1)}\nonumber\\
+        &= \sum_{n=1}^{\infty}\pr{X_n>\log n}\pr{X_{n+1}>\log (n+1)}\nonumber\\
+        &=\sum_{n=1}^{\infty}e^{-\log n}e^{-\log (n+1)}\nonumber\\
         &=\sum_{n=1}^{\infty}\frac{1}{n(n+1)}\nonumber\\
         &=\sum_{n=1}^{\infty}\frac{1}{n}-\frac{1}{n+1}\nonumber\\
         &=1
@@ -226,7 +226,7 @@ Now,for some constant $c\geq0$
     Now,from Borel-Cantelli lemma we can say that
     \begin{align}
         &\pr{E_n\text{ for infinitely many }n\geq1}\nonumber\\
-        &=\pr{\text{lim}_{n \rightarrow \infty}\text{sup }X_n>logn,X_{n+1}>log(n+1)}\nonumber\\
+        &=\pr{\text{lim}_{n \rightarrow \infty}\text{sup }X_n>\log n,X_{n+1}>\log (n+1)}\nonumber\\
         &=0\nonumber
     \end{align}
     $\therefore$ Option 4 is correct.
