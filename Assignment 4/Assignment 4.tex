@@ -1,1 +1,237 @@
-this will be changed
+\documentclass[journal,12pt,twocolumn]{IEEEtran}
+
+\usepackage{setspace}
+\usepackage{gensymb}
+\singlespacing
+\usepackage[cmex10]{amsmath}
+
+\usepackage{amsthm}
+
+\usepackage{mathrsfs}
+\usepackage{txfonts}
+\usepackage{stfloats}
+\usepackage{bm}
+\usepackage{cite}
+\usepackage{cases}
+\usepackage{subfig}
+
+\usepackage{longtable}
+\usepackage{multirow}
+
+\usepackage{enumitem}
+\usepackage{mathtools}
+\usepackage{steinmetz}
+\usepackage{tikz}
+\usepackage{circuitikz}
+\usepackage{verbatim}
+\usepackage{tfrupee}
+\usepackage[breaklinks=true]{hyperref}
+\usepackage{graphicx}
+\usepackage{tkz-euclide}
+
+\usetikzlibrary{calc,math}
+\usepackage{listings}
+    \usepackage{color}                                            %%
+    \usepackage{array}                                            %%
+    \usepackage{longtable}                                        %%
+    \usepackage{calc}                                             %%
+    \usepackage{multirow}                                         %%
+    \usepackage{hhline}                                           %%
+    \usepackage{ifthen}                                           %%
+    \usepackage{lscape}     
+\usepackage{multicol}
+\usepackage{chngcntr}
+
+\DeclareMathOperator*{\Res}{Res}
+
+\renewcommand\thesection{\arabic{section}}
+\renewcommand\thesubsection{\thesection.\arabic{subsection}}
+\renewcommand\thesubsubsection{\thesubsection.\arabic{subsubsection}}
+
+\renewcommand\thesectiondis{\arabic{section}}
+\renewcommand\thesubsectiondis{\thesectiondis.\arabic{subsection}}
+\renewcommand\thesubsubsectiondis{\thesubsectiondis.\arabic{subsubsection}}
+
+
+\hyphenation{op-tical net-works semi-conduc-tor}
+\def\inputGnumericTable{}                                 %%
+
+\newcommand{\permcomb}[4][0mu]{{{}^{#3}\mkern#1#2_{#4}}}
+\newcommand{\perm}[1][-3mu]{\permcomb[#1]{P}}
+\newcommand*{\comb}[1][-1mu]{\permcomb[#1]{C}}
+
+\lstset{
+%language=C,
+frame=single, 
+breaklines=true,
+columns=fullflexible
+}
+\begin{document}
+
+\newcommand{\BEQA}{\begin{eqnarray}}
+\newcommand{\EEQA}{\end{eqnarray}}
+\newcommand{\define}{\stackrel{\triangle}{=}}
+\bibliographystyle{IEEEtran}
+\raggedbottom
+\setlength{\parindent}{0pt}
+\providecommand{\mbf}{\mathbf}
+\providecommand{\pr}[1]{\ensuremath{\Pr\left(#1\right)}}
+\providecommand{\qfunc}[1]{\ensuremath{Q\left(#1\right)}}
+\providecommand{\sbrak}[1]{\ensuremath{{}\left[#1\right]}}
+\providecommand{\lsbrak}[1]{\ensuremath{{}\left[#1\right.}}
+\providecommand{\rsbrak}[1]{\ensuremath{{}\left.#1\right]}}
+\providecommand{\brak}[1]{\ensuremath{\left(#1\right)}}
+\providecommand{\lbrak}[1]{\ensuremath{\left(#1\right.}}
+\providecommand{\rbrak}[1]{\ensuremath{\left.#1\right)}}
+\providecommand{\cbrak}[1]{\ensuremath{\left\{#1\right\}}}
+\providecommand{\lcbrak}[1]{\ensuremath{\left\{#1\right.}}
+\providecommand{\rcbrak}[1]{\ensuremath{\left.#1\right\}}}
+\theoremstyle{remark}
+\newtheorem{rem}{Remark}
+\newcommand{\sgn}{\mathop{\mathrm{sgn}}}
+\providecommand{\abs}[1]{\vert#1\vert}
+\providecommand{\res}[1]{\Res\displaylimits_{#1}} 
+\providecommand{\norm}[1]{\lVert#1\rVert}
+%\providecommand{\norm}[1]{\lVert#1\rVert}
+\providecommand{\mtx}[1]{\mathbf{#1}}
+\providecommand{\mean}[1]{E[ #1 ]}
+\providecommand{\fourier}{\overset{\mathcal{F}}{ \rightleftharpoons}}
+%\providecommand{\hilbert}{\overset{\mathcal{H}}{ \rightleftharpoons}}
+\providecommand{\system}{\overset{\mathcal{H}}{ \longleftrightarrow}}
+	%\newcommand{\solution}[2]{\textbf{Solution:}{#1}}
+\newcommand{\solution}{\noindent \textbf{Solution: }}
+\newcommand{\cosec}{\,\text{cosec}\,}
+\providecommand{\dec}[2]{\ensuremath{\overset{#1}{\underset{#2}{\gtrless}}}}
+\newcommand{\myvec}[1]{\ensuremath{\begin{pmatrix}#1\end{pmatrix}}}
+\newcommand{\mydet}[1]{\ensuremath{\begin{vmatrix}#1\end{vmatrix}}}
+\numberwithin{equation}{subsection}
+\makeatletter
+\@addtoreset{figure}{problem}
+\makeatother
+\let\StandardTheFigure\thefigure
+\let\vec\mathbf
+\renewcommand{\thefigure}{\theproblem}
+\def\putbox#1#2#3{\makebox[0in][l]{\makebox[#1][l]{}\raisebox{\baselineskip}[0in][0in]{\raisebox{#2}[0in][0in]{#3}}}}
+     \def\rightbox#1{\makebox[0in][r]{#1}}
+     \def\centbox#1{\makebox[0in]{#1}}
+     \def\topbox#1{\raisebox{-\baselineskip}[0in][0in]{#1}}
+     \def\midbox#1{\raisebox{-0.5\baselineskip}[0in][0in]{#1}}
+\vspace{3cm}
+\title{AI1103-Challenging Problem 1}
+\author{Aman Panwar - CS20BTECH11004}
+\maketitle
+\newpage
+\bigskip
+\renewcommand{\thefigure}{\theenumi}
+\renewcommand{\thetable}{\theenumi}
+%
+Latex codes : 
+%
+\begin{lstlisting}
+https://github.com/CS20BTECH11004/AI1103/blob/main/Assignment%204/Assignment%204.tex
+\end{lstlisting}
+
+\section*{Question: CSIR UGC NET EXAM (June 2013), Q.101}
+Let $X_1$,$X_2$,... be independent random variables each following exponential distribution with mean 1. Then which of the following statements are correct?
+\begin{enumerate}
+    \item P($X_n > log n$ for infinitely many $n \geq 1$) = 1
+    \item P($X_n > 2$ for infinitely many $n \geq 1$) = 1
+    \item P($X_n > \frac{1}{2}$ for infinitely many $n \geq 1$) = 0
+    \item P($X_n > log n, X_{n+1}>log(n+1)$ for infinitely many $n \geq 1$) = 0
+\end{enumerate}
+\section*{Solution}
+\newcommand{\Integral}[2]{\ensuremath{\int\limits_{#1}^{#2}}}
+
+PDF of $X_i$ is
+\begin{align}
+    f_{X_i}(x)=\begin{cases}\lambda_i e^{-\lambda_i x}, &x\geq 0\\
+                0, &x<0\nonumber
+    \end{cases}    
+\end{align} 
+Mean of $X_i$ is expressed as
+\begin{align}
+    \mean{X_i}&=\Integral{-\infty}{\infty}x f_{X_i}(x) dx\nonumber\\
+              &=\Integral{-\infty}{0}0 dx + \Integral{0}{\infty}x \lambda_i e^{-\lambda_i x}\nonumber\\
+              &=\frac{1}{\lambda_i}\label{a}
+\end{align}
+From \eqref{a}and $\mean{X_i}=1$, we have $\lambda_i=1 \forall  i \geq1$
+
+
+Now,for some constant $c\geq0$
+\begin{align}
+    \pr{X_n>c}&=\Integral{c}{\infty}f_{X_n}(x)dx\nonumber\\
+              &=\Integral{c}{\infty}e^{-x}dx\nonumber\\
+              %&=-e^{-x}\Big|_c^{\infty}\nonumber\\
+              &=e^{-c}\label{b}
+\end{align}
+
+\textbf{Option 1:} 
+We can say the events $X_n>log n$ are independent $\forall n\geq 1$ as $X_n$ are independent random variable.
+
+From \eqref{b}
+\begin{align}
+    \sum_{n=1}^{\infty}\pr{X_n > log n} &=\sum_{n=1}^{\infty}e^{-logn}\nonumber\\ &=\sum_{n=1}^{\infty}\frac{1}{n}\nonumber\\
+                                        &= \infty  \text{ (Cauchy's Criterion)}\nonumber
+\end{align}
+Now,from second Borel-Cantelli lemma we can say that
+\begin{align}
+    &\pr{X_n>logn \text{ for infinitely many }n\geq1}\nonumber\\
+    &=\pr{\text{lim}_{n \rightarrow \infty}\text{sup }X_n>logn}\nonumber\\
+    &=1\nonumber
+\end{align}
+$\therefore$ Option 1 is correct.
+
+\vspace{0.5cm}\textbf{Option 2:} We can say the events $X_n>2$ are independent $\forall n\geq 1$ as $X_n$ are independent random variable.
+
+From \eqref{b}
+\begin{align}
+    \sum_{n=1}^{\infty}\pr{X_n > 2} &= \sum_{n=1}^{\infty}e^{-2}\nonumber\\
+                                        &= \infty\nonumber
+\end{align}
+Now,from second Borel-Cantelli lemma we can say that
+\begin{align}
+    &\pr{X_n>2 \text{ for infinitely many }n\geq1}\nonumber\\
+    &=\pr{\text{lim}_{n \rightarrow \infty}\text{sup }X_n>2}\nonumber\\
+    &=1\nonumber
+\end{align}
+$\therefore$ Option 2 is correct.
+
+
+\vspace{0.5cm}\textbf{Option 3:} We can say the events $X_n>\frac{1}{2}$ are independent $\forall n\geq 1$ as $X_n$ are independent random variable.
+
+From \eqref{b}
+\begin{align}
+    \sum_{n=1}^{\infty}\pr{X_n > \frac{1}{2}} &= \sum_{n=1}^{\infty}e^{-\frac{1}{2}}\nonumber\\
+                                        &= \infty\nonumber
+\end{align}
+Now,from second Borel-Cantelli lemma we can say that
+\begin{align}
+    &\pr{X_n>\frac{1}{2} \text{ for infinitely many }n\geq1}\nonumber\\
+    &=\pr{\text{lim}_{n \rightarrow \infty}\text{sup }X_n>\frac{1}{2}}\nonumber\\
+    &=1\nonumber
+\end{align}
+$\therefore$ Option 3 is incorrect.
+
+\vspace{0.5cm}\textbf{Option 4:} We can say the events $X_n>logn$ are independent $\forall n\geq 1$ as $X_n$ are independent random variable.
+
+Let the event $X_n > logn,X_{n+1}>log(n+1)$ be represented by $E_n$'
+
+From \eqref{b}
+\begin{align}
+    &\sum_{n=1}^{\infty}\pr{E_n}\nonumber\\
+    &= \sum_{n=1}^{\infty}\pr{X_n>logn}\pr{X_{n+1}>log(n+1)}\nonumber\\
+    &=\sum_{n=1}^{\infty}e^{-logn}e^{-log(n+1)}\nonumber\\
+    &=\sum_{n=1}^{\infty}\frac{1}{n(n+1)}\nonumber\\
+    &=\sum_{n=1}^{\infty}\frac{1}{n}-\frac{1}{n+1}\nonumber\\
+    &=1
+\end{align}
+Now,from Borel-Cantelli lemma we can say that
+\begin{align}
+    &\pr{E_n\text{ for infinitely many }n\geq1}\nonumber\\
+    &=\pr{\text{lim}_{n \rightarrow \infty}\text{sup }X_n>logn,X_{n+1}>log(n+1)}\nonumber\\
+    &=0\nonumber
+\end{align}
+$\therefore$ Option 4 is correct.
+
+\vspace{0.5cm}\centering \boxed{\solution{\text{Options 1, 2, 4}}}
+\end{document}
