@@ -167,13 +167,23 @@ Therefore, the Hazard function of X F(x) is
                         0                            &x\leq\mu   
     \end{cases}\nonumber
 \end{align}
-Differentiating F(x) wrt x
+It is obvious that $F(x)$ is continuous at $x=\mu$
+
+\bigskip
+
+
+Differentiating F(x) w.r.t. x
 \begin{align}
     F'(x)&=\begin{cases}\alpha\brak{\alpha - 1}\brak{x-\mu}^{\alpha -2};&x>\mu\\
                         0                            &x\leq\mu   
     \end{cases}\nonumber
 \end{align}
-When $x\leq \mu$ then F'(x) is non-negative. When $x>\mu$ then $\brak{x-\mu}^{\alpha -2}$ is positive. This implies that the sign for F'(x) for $x>\mu$ is decided by the sign of $\alpha\brak{\alpha -1}$. As, $\alpha > 0$, $F'(x)<0$ for $x>\mu$ and $\alpha \in (0,1)$ 
+When $x\leq \mu$ then F'(x) is non-negative. When $x>\mu$ then $\brak{x-\mu}^{\alpha -2}$ is positive. This implies that the sign for F'(x) for $x>\mu$ is decided by the sign of $\alpha\brak{\alpha -1}$.
+\begin{align}
+    \alpha\brak{1-\alpha}<0
+    \implies 0<\alpha<1
+\end{align}
+So, $F'(x)<0$ for $x>\mu$ and $\alpha \in (0,1)$ and $F(x) \geq 0$ for all other cases.
 
 \bigskip
 $\therefore$ For $\alpha>0$ the Hazard function of X can be both increasing and decreasing.
