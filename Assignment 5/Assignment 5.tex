@@ -170,14 +170,13 @@ Differentiating $H(y)$ w.r.t. $y$
                         0                            &y\leq\mu   
     \end{cases}\nonumber
 \end{align}
-When $y\leq \mu$ then $H'(y)$ is non-negative. When $y>\mu$ then $\brak{y-\mu}^{\alpha -2}$ is positive. This implies that the sign for $F'(y)$ for $y>\mu$ is decided by the sign of $\alpha\brak{\alpha -1}$.
+When $y\leq \mu$ then $H'(y)$ is $0$. When $y>\mu$ then $\brak{y-\mu}^{\alpha -2}$ is positive. This implies that the sign for $H'(y)$ for $y>\mu$ is decided by the sign of $\alpha\brak{\alpha -1}$.
 \begin{align}
     \alpha\brak{1-\alpha}<0
-    \implies 0<\alpha<1
+    \implies 0<\alpha<1\nonumber\\
+    \alpha\brak{1-\alpha}>0\implies \alpha>1 &&\text{(ignoring $\alpha<0$)}\nonumber
 \end{align}
-So, $H'(y)<0$ for $y>\mu$ and $\alpha \in (0,1)$ and $H'(y) \geq 0$ for all other cases.
-
-$\therefore$ For $\alpha>0$, the Hazard function of $X$ can be both increasing and decreasing.
+$\therefore$ The Hazard function of $X$ is decreasing when $\alpha \in \brak{0,1}$ and increasing when $\alpha \in \brak{1,\infty}$
 
 
 \vspace{0.5cm}\centering \boxed{\solution{\text{Options 3, 4}}}
