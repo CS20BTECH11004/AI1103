@@ -100,7 +100,7 @@ Let $X_1$,$X_2$,... be independent random variables each following exponential d
 \end{align}
 then the probability that infinitely many of them occur is 0
 \begin{align}
-    \pr{\lim_{n \rightarrow \infty}\sup E_n}&=0
+    \pr{\bigcap_{n=1}^{\infty}\bigcup_{i=n}^{\infty}E_{i}}&=0
 \end{align}
 \end{block}
 \end{frame}
@@ -115,7 +115,7 @@ If for independent events $E_1,E_2,...$
 \end{align}
 Then
 \begin{align}
-    \pr{\lim_{n \rightarrow \infty}\sup E_n}&=1
+    \pr{\bigcap_{n=1}^{\infty}\bigcup_{i=n}^{\infty}E_{i}}&=1
 \end{align}
 \end{block}
 \end{frame}
@@ -181,7 +181,7 @@ We can say the events $X_n>\log n$ are independent $\forall n\geq 1$ as $X_n$ ar
     Now, from second Borel-Cantelli lemma
     \begin{align}
         &\pr{X_n>\log n \text{ for infinitely many }n\geq1}\nonumber\\
-        &=\pr{\lim_{n \rightarrow \infty}\sup X_n>\log n}\nonumber\\
+        &=\pr{\bigcap_{n=1}^{\infty}\bigcup_{i=n}^{\infty}\brak{X_n>\log n}}\nonumber\\
         &=1\nonumber
     \end{align}
     $\therefore$ \textbf{Option 1 is correct. }
@@ -212,7 +212,7 @@ We can say the events $X_n>\log n$ are independent $\forall n\geq 1$ as $X_n$ ar
     Now, from second Borel-Cantelli lemma
     \begin{align}
         &\pr{X_n>2 \text{ for infinitely many }n\geq1}\nonumber\\
-        &=\pr{\lim_{n \rightarrow \infty}\sup X_n>2}\nonumber\\
+        &=\pr{\bigcap_{n=1}^{\infty}\bigcup_{i=n}^{\infty}\brak{ X_n>2}}\nonumber\\
         &=1\nonumber
     \end{align}
     $\therefore$ \textbf{Option 2 is correct.}
@@ -242,7 +242,7 @@ We can say the events $X_n>\frac{1}{2}$ are independent $\forall n\geq 1$ as $X_
     Now, from second Borel-Cantelli lemma
     \begin{align}
         &\pr{X_n>\frac{1}{2} \text{ for infinitely many }n\geq1}\nonumber\\
-        &=\pr{\lim_{n \rightarrow \infty}\sup X_n>\frac{1}{2}}\nonumber\\
+        &=\pr{\bigcap_{n=1}^{\infty}\bigcup_{i=n}^{\infty}\brak{ X_n>\frac{1}{2}}}\nonumber\\
         &=1\nonumber
     \end{align}
     $\therefore$ \textbf{Option 3 is incorrect.}
@@ -275,7 +275,7 @@ We can say the events $X_n>\frac{1}{2}$ are independent $\forall n\geq 1$ as $X_
     Now, from Borel-Cantelli lemma
     \begin{align}
         &\pr{E_n\text{ for infinitely many }n\geq1}\nonumber\\
-        &=\pr{\lim_{n \rightarrow \infty}\sup ( X_n>\log n,X_{n+1}>\log (n+1))}\nonumber\\
+        &=\pr{\bigcap_{n=1}^{\infty}\bigcup_{i=n}^{\infty} \brak{X_n>\log n,X_{n+1}>\log (n+1)}}\nonumber\\
         &=0\nonumber
     \end{align}
     $\therefore$ \textbf{Option 4 is correct.}
